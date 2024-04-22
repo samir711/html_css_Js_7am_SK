@@ -1,0 +1,56 @@
+<!-- 20-April-2024 -->
+<!-- Functions  -->
+
+<!-- 
+
+-->
+
+
+
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Func3</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script src="arrowfuns.js"></script>
+</head>
+  
+<body>
+  <h3>Demo on Expression function </h3>
+   
+  <script>
+       myfun();
+    document.write(`${add(10, 20)} <br>`);
+    document.write(`${product(10, 20)} <br>`);
+
+    const eles = [10, 50, 2, 9, 40]
+    
+    //callback
+    eles.forEach(
+
+               (e) =>{
+                console.log('hi');
+                document.write(`${e} &nbsp; `);
+               }
+
+    )
+
+    let tot=0;
+    eles.forEach( e=> tot+=e);
+    document.write(`<br> Sum of Elements ${tot} <br>`);
+
+    eles.sort((i, j) => i -j)
+    document.write(` Elements ${eles} <br> `);
+
+    eles.sort((i, j) => j-i)
+    document.write(` Elements ${eles} <br> `);
+  </script>
+   
+ 
+</body> 
+
+</html>

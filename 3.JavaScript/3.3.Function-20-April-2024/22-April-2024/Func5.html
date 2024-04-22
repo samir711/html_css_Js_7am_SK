@@ -1,0 +1,43 @@
+<!-- 20-April-2024 -->
+<!-- Functions  -->
+
+<!-- 
+
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Func5</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+       const sum = function(...n) {
+                   let tot = 0;
+                   n.forEach((e) =>{
+                       tot+=e;
+                   }
+                   );
+                   return tot;
+       }
+
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on rest param (js6) </h3>
+
+  <script>
+          document.write(`${sum()} <br>`);
+          document.write(`${sum(10, 20, 30)} <br>`);
+          document.write(`${sum(1, 2, 3, 4, 5, 6, 7, 8, 9)} <br>`);
+
+
+  </script>
+   
+ 
+</body> 
+
+</html>
