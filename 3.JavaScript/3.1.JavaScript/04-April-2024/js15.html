@@ -1,0 +1,80 @@
+<!-- 04-April-2024 -->
+<!-- example on JS Variables -->
+ <!-- 
+ 
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js15</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+ 
+</head>
+
+<body>
+    <h2>demo on JS Operator  </h2>
+    <script>
+   //    let a=10, b="ram", c=true;
+       let x = 18, y = 5; 
+
+    // arithematic operator +, -, *, / , %, **
+    document.write(x+y,'<br>');
+    document.write(y*3,'<br>');
+    document.write(y**3,'<br>');
+    document.write(x/y,'<br>'); //quiotent
+    document.write(x%y,'<br>'); //remainder
+    document.write(x-y,'<br>');
+
+    // relational Operator >, <, >=, <=, ==, !=, ===, !==
+    // comparision, condition and test cases
+    document.write(x>=0,'<br>');
+    document.write(x<=0,'<br>');
+    
+    let z="5";
+    document.write(y==z,'<br>'); //5=="5"   ==> 5==5
+    document.write(y===z,'<br>'); //5==="5"
+    document.write(y!=z,'<br>');  //5!="5"   ==> 5!=5
+    document.write(y!==z,'<br>'); //5!=="5"
+   
+    // logical Operator - &&, ||, !
+    // multiple comparion or multiple condition, use truth table 
+    document.write(y>=0 && y<=10, `<br>`);
+    document.write(!(x>=0) , `<br>`);
+
+    /* assignment Operator => =
+       shorthand Operator +=  -= /= %= *= **=  
+       
+    */
+     x+=20;                // x= X + 20
+     y*=10;                // y = Y*10
+    document.write(x, "<br>", y, `<br>`);
+
+
+    //Concatenation Operator
+    document.write("rama"+"rao"+"<br>")
+    document.write(100+'mangos',"<br>")
+    document.write(20+true+'<br>');
+   /*
+    increment ++ => currentval + 1             ++var        var++
+    decrement -- => currentval - 1             --var        Var--
+      
+   */
+   x++;
+   document.write(x, `<br>`)
+   ++x
+   document.write(x, `<br>`);
+
+   let re= 10 * ++y;
+   document.write(re,`<br>`,`<br>`);
+
+   //conditional operator
+   // condition? statment1: statement2
+   document.write( x % 2 === 0? "Even Number" : "Odd Number");
+
+</script>
+</body> 
+
+</html>

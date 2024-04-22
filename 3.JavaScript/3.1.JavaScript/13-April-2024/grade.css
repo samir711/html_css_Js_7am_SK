@@ -1,0 +1,14 @@
+/* defining styles for student grade */
+table{
+    margin: auto;
+    background: blue;
+    color: yellow;
+    width: 300px;
+}
+caption{
+    color:blue
+}
+output{
+    color:white;
+    font-size: 20px;
+}

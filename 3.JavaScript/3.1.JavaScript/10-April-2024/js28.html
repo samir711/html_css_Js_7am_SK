@@ -1,0 +1,70 @@
+<!-- 10-April-2024 -->
+<!-- Control Statements -->
+<!-- example on switch statement -->
+ <!--    
+      switch statement
+      => switch is a selection statement, but it is not decision making
+      => it is better performance
+      =>
+      Syntax:
+      switch(var/expr) {
+
+        case value: statements....
+          break;
+
+       case value: statements....
+          break;
+
+       case...
+
+       default: statements....
+
+      }
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js28</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  
+</head>
+
+<body>
+   <script>
+       
+    let a , b, c , d;
+    a = 10;
+    b = "RAM";
+    c = true;
+    d = 10.66;
+
+    // it supports condition
+    let z = -100;
+    switch(z >= 0){
+      case true : document.write('+ve <br>');
+           break;
+       case false: document.write('-ve <br>')
+     // default: document.write("No<br>");
+        break;
+    }
+
+    // we can use variable with in "Case"
+    let x = 10, y = 20, n = 20;
+   switch(n) {
+     case x : document.write('X');
+     break;
+     case y : document.write('Y');
+     break;
+     default:
+     document.write('No');
+   }
+
+   
+   </script>
+ 
+</body> 
+
+</html>

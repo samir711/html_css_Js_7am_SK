@@ -1,0 +1,55 @@
+<!-- 13-April-2024 -->
+<!-- loop example  -->
+<!-- Multiplication table -->
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS34</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+     <link rel="stylesheet" href="grade.css">
+</head>
+
+<body>
+  <h3>Multiplication table printing</h3>
+  <input type="text" id="tn" placeholder="enter table number">
+  <button onclick="printTable()"> Print Table</button>
+  <script>
+   function printTable() {
+
+    let n, res; // local variables
+     n = +tn.value;
+     if(isNaN(n) == false) {
+
+      for(let i = 1; i <= 20; i+=1){
+
+        res= n * i;
+        document.write(n +" * "+ i +" = "+ res +"<br>");
+       } 
+   }else {
+    alert("Please enter number only");
+
+}
+
+
+
+     /* res=n*1;
+     document.write(n, 1, res);
+     
+    res=n*2;
+     document.write(n, 2, res);
+
+     res=n*3;
+     document.write(n, 3, res); */
+   
+   }
+
+  </script>
+ 
+ 
+</body> 
+
+</html>

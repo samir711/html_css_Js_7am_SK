@@ -1,0 +1,42 @@
+/* defining sytles for interest calculatror */
+div{
+   width: 350px;
+   height: 350px;
+   background-color: #111;
+   color: #eee;
+   border-radius: 20px;
+   box-shadow:  0px 0px 10px red;
+   margin: auto;
+   padding: 20px;
+
+
+}
+div:hover {
+    box-shadow: 0px 0px 15px blue;
+}
+input{
+    outline:none;
+    font-size: 20px;
+}
+button{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    background: blue;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 600ms;
+}
+button:hover{
+    border-radius: 15px;
+    background: red;
+
+}
+
+output{
+    color: cyan;
+    font-size: 18px;
+}

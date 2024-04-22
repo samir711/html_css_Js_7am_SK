@@ -1,0 +1,83 @@
+<!-- 05-April-2024 -->
+<!-- example on JS Variables -->
+ <!--
+  parsing 
+  => Changing the data from string type to actual type
+
+     input value => text / string
+          "10" => 10   6
+  types:
+  => auto parsing
+     -> auto means browser/interpreter performing parsing operation
+     -> while performing subtractions, products, divisions, equal and not equal  
+
+  => manual parsing
+      -> using functions
+         1. parseInt()
+            changing data from string format to integer format
+            syntax:  window.parseInt(data)
+               "10"  => 10
+               "20.45" => 20
+               "ram" => NaN
+        2. parseFloat()
+            changing data from string format to floating format
+            syntax: window.parseFloat(data)
+              "10"  => 10
+              "20.45" => 20.45
+              "ram" => NaN
+
+          eval() 
+      
+          -> using parse operator
+            > + is parse operator
+            > its unary operator and its prefix operator
+            Syntax: +var oR    +value
+            +"10" => 10
+            +"10.56"  => 10.56
+            +"ram" => NaN 
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js17</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+ 
+</head>
+
+<body>
+<h2>demo on parsing  </h2>
+<script>
+     let x="6", y="25";
+     document.write(x+y,"<br>","<br>");
+     document.write(x-y,"<br>","<br>");
+     document.write(x*y,"<br>","<br>");
+     document.write(x/y,"<br>","<br>");
+     y--;
+     document.write(y,"<br>","<br>");
+     document.write(x+y,"<br>","<br>"); // no auto parsing
+
+     let result = window.parseInt(x) + window.parseInt(y);
+     document.write(result,"<br>","<br>");
+   
+     res = +x + +y;
+     document.write(result,"<br>","<br>");
+     document.write("Result "+ x>y, '<br>','<br>');
+     let a="1000", b="45";
+     document.write(a>b,'<br>');
+     document.write(+a>+b,'<br>');
+
+     let st="ram";
+     document.write(parseInt(st),"<br>","<br>");
+     document.write(parseFloat("apple123"),"<br>","<br>");
+     document.write(+st,"<br>","<br>");
+
+
+ //    document.write(a===b, '<br>');
+
+</script>
+</body> 
+
+</html>

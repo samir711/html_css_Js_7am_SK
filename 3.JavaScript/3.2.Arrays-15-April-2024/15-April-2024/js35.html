@@ -1,0 +1,54 @@
+<!-- 15-April-2024 -->
+<!-- String Interpolation  -->
+<!-- 
+  Interpolation
+  => substituting value / expr/ function dynamically between the string
+  => while printing, while assigning
+  => since JS6 (ES)
+  => It requires template literal
+  Syntax:- 
+        `${ }`
+        ` text ${var} text ${expr} text ${fun call}...`
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JS35</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+</head>
+  
+<body>
+  <h3>Demo on Interpolation</h3>
+  <script>
+   let a = "ram";
+   document.write(a+"<br>");
+   document.write(`${a} <br> `)
+   document.write("Sum is 10 + 20 <br>");
+   document.write(`Sum of 10 and 20 is  ${10+20} <br`)
+   document.write(`Sub of 10 and 6 is  ${1 - 6} <br><br>`)
+    
+   let n = 10;
+   for(let i = 1; i <= 10; i++ ){
+    document.write(` ${n} * ${i} = ${n * i} <br>`);
+
+
+   }
+
+   let str = `hi ${a}`;
+   document.write(`${str} <br>` );
+
+   let x = 20, y = 8, res;
+
+   res = ` Sum is ${x=y} <br>`
+
+
+  </script>
+ 
+ 
+</body> 
+
+</html>

@@ -1,0 +1,52 @@
+<!-- 16-April-2024 -->
+<!-- Arrays  -->
+<!-- 
+ 
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays3</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+</head>
+  
+<body>
+  <h3>Demo on array constructor</h3>
+  <script>
+    //storing different types of elements
+    let data = ["ram", 40, 5.10, true, new Date()];
+    document.write(`data => ${data} <br>`);
+
+    //constant array
+    const a = [10, 20, 30];
+    document.write(`A ${a} <br>`);
+    a[1] = 22 ; //modification
+    a[3] = 44 ;
+    document.write(`A ${a} <br>`);
+    
+    // a = [12, 45, 89]; error
+
+    // dynamic array
+    const b = [11, 22, 33, 44, 55, 66, 77, 88, 99];
+    document.write(`B ${b} <br>`);
+    b.length = 5;  // reduces size
+    document.write(`B ${b} <br>`); 
+    b.length = 7; //incre size
+    b[5] = 10;
+    b[6] = 20;
+    document.write(`B ${b} <br>`); 
+    for(let i=0; i<b.length;i++) {
+      document.write(`${b[i]} `);
+    }
+     
+  </script>
+ 
+ 
+</body> 
+
+</html>

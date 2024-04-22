@@ -1,0 +1,48 @@
+<!-- 16-April-2024 -->
+<!-- Arrays  -->
+<!-- 
+ 
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays5</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+</head>
+  
+<body>
+  <h3>Demo on nesting array</h3>
+  <script>
+     const a = [
+                 [10, 20, 30 ],
+                 [true, false],
+                 ['cyan','red','green','black']
+     
+               ];
+
+
+  document.write(` ${a.length} <br>`);
+  document.write(` ${a[0].length} <br>`);
+  document.write(` ${a[1].length} <br>`);
+  document.write(` ${a} <br>`);
+
+  for(let i=0; i<a.length;i++) {
+    for (let j=0; j<a[i].length;j++) {
+      document.write(` ${a[i][j]} &nbsp; `);
+    }
+    document.write(`<br>`);
+
+  }
+    
+     
+  </script>
+ 
+ 
+</body> 
+
+</html>

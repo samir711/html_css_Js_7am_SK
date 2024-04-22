@@ -1,0 +1,44 @@
+<!-- 07-April-2024 -->
+<!-- Designing Simple interest Calculator -->
+ <!-- Arithmatic Calculator   -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js22</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <link rel="stylesheet" href="interest.css">
+ </head>
+
+<body>
+  <div>
+   <h2 align="center"><u>Interest Calculator</u></h2>
+   <p>
+      <label for="pamt">Principal Amount</label><br>
+      <input type="text" id="pamt" autofocus><span>  &#8377;</span>
+   </p>
+   <p>
+    <label for="time">Time</label><br>
+    <input type="text" id="time"><span> Year(s)</span>
+   </p>
+   <p>
+    <label for="roi">Rate of Interest</label><br>
+    <input type="text" id="roi"><span> %</span>
+
+   </p>
+    <p align="center">
+      <button onclick="CalculateInterest()">Get Interest</button>
+    </p>
+    <p>
+      <output id="interest"></output><br>
+      <output id="totAmt"></output>
+    </p>
+  </div>
+    <script src="interest.js">
+
+    </script>
+</body> 
+
+</html>

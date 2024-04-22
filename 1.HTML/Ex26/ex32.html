@@ -1,0 +1,49 @@
+
+<!-- example on select and option tags -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo1.png">
+    <title>Ex32</title>
+</head>
+<body>
+    <h2><u>Account Creation Page</u></h2>
+    <form action="newuser.html" method="post">
+     <label for="fna">Fullname</label>
+     <span>*</span><br>
+     <input type="text" name="fna" id="fna" required autofocus>
+     <br>
+     <label for="pwd">Set Password</label>   
+     <span>*</span><br>
+     <input type="password" name="pwd" id="pwd" required>
+     <br>
+     <label for="phone">Contact nmber</label>   
+     <span>*</span><br>
+     <input type="text" name="phone" id="phone" required maxlength="10">
+     <br>
+     <label for="em">Email id</label>   
+     <span>*</span><br>
+     <input type="email" name="em" id="em" required >
+     <br>
+    <label for="dob">Date of Birth/label>   
+    <input type="date" name="dob" id="dob" min="1900-01-01" max="2024-03-06">
+     <br>
+     <label>Gender:</label> <br>
+     <input type="radio" id="g1" name="gen"> <label>Female</label> &nbsp; 
+     <input type="radio" id="g2" name="gen"> <label>Male</label> &nbsp; 		
+     <input type="radio" id="g3" name="gen"> <label>Others</label>
+     <br>
+     <input type="checkbox" id="tc" name="tc" required> <label>I Accepted all terms & conditions</label>
+     <bR>
+     <button type="submit">Create User</button>
+    </form>
+ 
+
+
+       
+
+    
+</body>
+</html>

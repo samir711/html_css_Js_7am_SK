@@ -1,0 +1,70 @@
+<!-- 19-April-2024 -->
+<!-- Functions  -->
+<!-- 
+ > Function is a named block; it consists group of statements
+ > Function is used to perform specific task / operation
+ 
+ Advantage:
+ > Reusable means they allow the code to be called many times with out repetition.
+ > reduce length of code
+ > Easy maintenance code (readability, easy debugging and modification of code...)
+
+ Types of functions:
+  1. Named Functions
+  2. Expressional Function
+  3. Arrow Function
+  4. IEF / IIF
+
+ We can develop functions either internal or external
+ Internal  => within the script tag
+ External  => in seperate file but no
+
+How to define a Named function?
+By using "function" keyword we can define / develop functions
+Syntax:
+       function fun-name(parameters) {
+        Local dec
+        Statements
+        return value;
+       }
+
+ -->
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays10</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+</head>
+  
+<body>
+  <h3>Demo on array  </h3>
+   <input type="text" id="tb" placeholder="enter element">
+   <br>
+   <button onclick="addElement()">add element</button>
+   <button onclick="viewElements()">view elements</button>
+   <br>
+   <span>Elements:</span>
+   <output id="op"></output>
+  <script>
+    const eles = []
+    
+    function addElement() {
+      eles.push(tb.value);
+      tb.value = "";
+      tb.focus();
+    }
+    function viewElements() {
+      op.value = eles;
+
+
+    }
+  </script>
+   
+ 
+</body> 
+
+</html>

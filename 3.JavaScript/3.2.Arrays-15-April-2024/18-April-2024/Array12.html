@@ -1,0 +1,65 @@
+<!-- 18-April-2024 -->
+<!-- Arrays  -->
+<!-- ECMA SCRIPT - NEW FEATURES OF ARRAY
+Forin Loop - index fetch
+==========
+for(temp-var in array/coll) {
+
+  steps a[temp-var]
+}
+=> We can use array with in for in loop
+=> for in loop supports to manipulate array
+=> its index based loop
+
+For of Loop - element fetch
+for(temp-var of array/coll) {
+
+steps  - temp-var
+}
+=> We cannot use array with in for of loop
+=> for of loop not supports to manipulate array
+=> its 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays10</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+</head>
+  
+<body>
+  <h3>Demo on for in loop ECMA Script JS 6 Feature</h3>
+
+  <script>
+  
+   const a = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+   
+   for(let i in a) {
+    //document.write(`${i} <br>`);
+    document.write(`${i} => ${a[i]} <br>`);
+    a[i] = a[i] + 3
+
+   }
+    
+  </script>
+  <h3>Demo for of lopp (js6) </h3>
+  <script>
+           //const colors = ["red","cyan","black","yellow","blue"];
+          const colors = ["red","cyan","black","yellow","blue"];
+          for(let c of colors) {
+            document.write(`${c} <br>`);
+
+          }
+          let str="welcome";
+          for(let c of str){
+            document.write(`${c} `);
+          }
+
+        </script>
+ 
+</body> 
+
+</html>

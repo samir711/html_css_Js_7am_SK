@@ -1,0 +1,41 @@
+<!-- 19-April-2024 -->
+<!-- Arrays  -->
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays10</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+</head>
+  
+<body>
+  <h3>Demo on array  </h3>
+   <input type="text" id="tb" placeholder="enter element">
+   <br>
+   <button onclick="addElement()">add element</button>
+   <button onclick="viewElements()">view elements</button>
+   <br>
+   <span>Elements:</span>
+   <output id="op"></output>
+  <script>
+    const eles = []
+    
+    function addElement() {
+      eles.push(tb.value);
+      tb.value = "";
+      tb.focus();
+    }
+    function viewElements() {
+      op.value = eles;
+
+
+    }
+  </script>
+   
+ 
+</body> 
+
+</html>

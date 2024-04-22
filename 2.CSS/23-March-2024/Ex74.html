@@ -1,0 +1,57 @@
+<!--  CSS grid -->
+
+<!-- 23-March-2024 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex74</title>
+    <link rel="icon" href="logo1.png">
+    <style>
+      .grid-box{
+        display: grid;
+       /* grid-template-columns: 200px 300px 200px; */
+       grid-template-columns:auto auto auto auto;
+       grid-template-rows: 100px 150px 200px;
+      /* column-gap: 20px;
+       row-gap: 20px; */
+       grid-gap: 10px 20px;
+       background: cyan;
+      }
+      .grid-box div {
+        background: pink;
+        font-size: 30px;
+        text-align: center;
+      }
+
+    </style>
+</head>
+
+<body>
+    <h2>demo on CSS grid </h2>
+    <!-- container   -->
+    <div class="grid-box"> 
+        <!-- content -->
+        <div>
+            <img src="" alt="">
+            <h3>Siva Kumar</h3>
+        </div>
+        <div>January</div>
+        <div>Feburary</div>
+        <div>March</div>
+        <div>April</div>
+        <div>May</div>
+        <div>June</div>
+        <div>July</div>
+        <div>August</div>
+        <div>September</div>
+        <div>October</div>
+        <div>November</div>
+        <div>December</div>
+
+    </div>
+
+</body>
+
+</html>

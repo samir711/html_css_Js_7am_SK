@@ -1,0 +1,45 @@
+<!-- 02-April-2024 -->
+<!-- example on JS Variables -->
+<!--
+    var                             let
+=> global declaration             => local declaration, block level declaration
+=> Since JS1                      => Since JS 6
+=> supports re-defination         => Not supporsted re-defination
+=> supports variable Hoisting     => Not supported variable Hoisting
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js11</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+ 
+</head>
+
+<body>
+    <h2>demo on  re-defination and hoisting </h2>
+    <script>
+    var a = 100; // variable declaration
+    document.writeln(a);
+   var a ="apple"; // variable re-declaration
+  // let a ="apple"; // error
+    document.writeln(a);
+
+    x = 100;
+    document.writeln(x);
+    document.writeln(x * 15);
+     var x; //hoisting
+     //let x; error
+      y="rama";
+      document.writeln(y)
+      var y; // var hoisting
+      // let y; error 
+
+
+    </script>
+     
+</body> 
+
+</html>

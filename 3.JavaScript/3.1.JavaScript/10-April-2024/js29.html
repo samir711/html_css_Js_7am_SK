@@ -1,0 +1,66 @@
+<!-- 10-April-2024 -->
+<!-- Iterator Statements -->
+<!-- example on switch statement -->
+ <!--    
+     Looping Statements
+     Set of instruction given to the interperter to execute until the condition become false is called loops.
+     The basic purpose of the loop is minimum code repetition.
+
+     The way of the repetition will be forming circle that's why repetition statements are called loops. Some 
+     loops are available in Javascript which are given below.
+    
+     => while loop (top testing/entry level)
+     => for loop
+     => do-while (bottom testing/exit level)
+
+     initvalue => Where the loop begins   i = 1;
+     condition => When the loops end / stops  (i <= 10)
+     stepping  => It repeate no of iterations
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js29</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  
+</head>
+
+<body>
+   <script>
+       
+    let a , b, c , d;
+    a = 10;
+    b = "RAM";
+    c = true;
+    d = 10.66;
+
+    // it supports condition
+    let z = -100;
+    switch(z >= 0){
+      case true : document.write('+ve <br>');
+           break;
+       case false: document.write('-ve <br>')
+     // default: document.write("No<br>");
+        break;
+    }
+
+    // we can use variable with in "Case"
+    let x = 10, y = 20, n = 20;
+   switch(n) {
+     case x : document.write('X');
+     break;
+     case y : document.write('Y');
+     break;
+     default:
+     document.write('No');
+   }
+
+   
+   </script>
+ 
+</body> 
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo1.png">
+    <title>Ex26</title>
+</head>
+<body>
+    <h3>Demo on file upload </h3>
+    <form action="upload.aspx" method="post">
+    
+     <input type="file"><!-- any type, any size, 1 file -->
+     <br>
+     <input type="file" multiple> <!-- any type, any size, N file -->
+     <br>
+     <input type="file" accept=".pdf,.doc, .txt"> <!-- any type, any size, N file -->
+     <!-- 
+        accept="image/*"
+        accept="audio/*"
+        accept="video/*"
+        accept="application/*"
+      -->
+    <br>
+    <br>
+    <button type="submit">Upload</button>
+ 
+
+    </form>
+</body>
+</html>

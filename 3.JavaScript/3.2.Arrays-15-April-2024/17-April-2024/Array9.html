@@ -1,0 +1,66 @@
+<!-- 17-April-2024 -->
+<!-- Arrays  -->
+<!-- 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays9</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+</head>
+  
+<body>
+  <h3>Demo on array methods</h3>
+  <script>
+   
+  const eles = [10, 20, 30, 40, 50, 30, 60, 70, 80, 30, 90, 30]
+    // includes
+    document.write(`30 found ? ${eles.includes(30)} <br>`);
+    document.write(`55 found ? ${eles.includes(55)} <br>`);
+ 
+    let str="yellow mangos";
+    document.write(`${str.includes("e")} <br>`);
+    document.write(`${str.includes("go")} <br>`);
+    document.write(`${str.includes("k")} <br>`);
+
+    //index of    lst occurance
+    document.write(`30 @ ${eles.indexOf(30)}<br>`);
+    document.write(`66 @ ${eles.indexOf(66)}<br>`);
+    document.write(`30 @ ${eles.indexOf(30),6}<br>`);
+    
+    document.write(`w @ ${str.indexOf("w")}<br>`);
+    document.write(`o @ ${str.indexOf("o",7)}<br>`);
+
+    //lastIndexOf()
+
+    document.write(` last 30 @ ${eles.lastIndexOf(30)}<br>`);
+    document.write(` last 30 @ ${eles.lastIndexOf(30)}<br>`);
+    document.write(` ${str.lastIndexOf('l')}<br>`);
+    
+    //reverse
+    eles.reverse();
+    document.write(`reversed ${eles} <br>`);
+
+    //sort
+    eles.sort();
+    document.write(`sorted ${eles} <br>`);
+
+    const names = ['ramarao', 'rama', 'Ramana', 'raman', 'RamaKrishna','ramarama'];
+    document.write(`names ${names}<br>`);
+    names.sort();
+    document.write(`sorted ${names} <br>`);
+
+
+    //Join 
+    document.write(`${eles.join("SK")}<br>`);
+   
+  </script>
+ 
+ 
+</body> 
+
+</html>

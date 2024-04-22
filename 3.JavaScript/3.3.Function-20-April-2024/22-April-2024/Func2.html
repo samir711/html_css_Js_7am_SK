@@ -1,0 +1,80 @@
+<!-- 22-April-2024 -->
+<!-- Functions  -->
+
+<!-- 
+Expression Function
+
+function(params) {
+
+  body
+
+}
+
+
+Arrow Function
+
+(params) => {
+
+  body
+}
+=> Anonumous functions
+=> We can call using ref name
+=> Callback functions uses Expression function and Arrow function
+=> Extending functionality
+
+Named_fun-name(code => Expression function or Arrow function)
+-->
+
+
+
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Func2</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script src="exprfunc.js"></script>
+</head>
+  
+<body>
+  <h3>Demo on Expression function </h3>
+   
+  <script>
+       
+    document.write(`${add(10, 20)} <br>`);
+    document.write(`${product(25, 15)} <br>`);
+
+    const eles = [10, 50, 22, 9, 40];
+
+
+    //call back
+    eles.forEach(
+
+         function(e) {
+          console.log('hi');
+          document.write(`${e} &nbsp;`)
+         }
+
+    )
+
+      let tot = 0;
+    eles.forEach( function(e) {tot+=e });
+    document.write(`<br> Sum of Elements ${tot} <br>`);
+
+    // Ascending order
+    eles.sort( function(i, j) {return i - j});
+    document.write(` Elements in Ascending order ${eles} <br> ` );
+
+    // Descending order
+    eles.sort( function(i, j) {return j - i});
+    document.write(` Elements in Descending order ${eles} <br> `);
+
+  </script>
+   
+ 
+</body> 
+
+</html>

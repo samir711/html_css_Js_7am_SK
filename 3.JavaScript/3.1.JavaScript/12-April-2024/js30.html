@@ -1,0 +1,70 @@
+<!-- 12-April-2024 -->
+<!-- Iterator Statements -->
+<!-- example on while loop -->
+ <!--    
+     Looping Statements
+     Set of instruction given to the interperter to execute until the condition become false is called loops.
+     The basic purpose of the loop is minimum code repetition.
+
+     The way of the repetition will be forming circle that's why repetition statements are called loops. Some 
+     loops are available in Javascript which are given below.
+    
+     => while loop (top testing/entry level)
+     => for loop
+     => do-while (bottom testing/exit level)
+
+     initvalue => Where the loop begins   i = 1;
+     condition => When the loops end / stops  (i <= 10)
+     stepping  => It repeate no of iterations
+
+     for(initval;condition;step) {
+
+        statements;
+     }
+     for(;;){
+        statements
+     }
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js30</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  
+</head>
+
+<body>
+   <script>
+    let i = 1; //initval
+    while(i<=5) {            // condition
+
+        document.write("<h3>Hello</h3>");
+
+     i++;        // stepping
+    }
+
+     // to print 1 to 20 numbers
+   let j = 1;
+    while(j<=20) {
+
+     document.write(j);
+     ++j;
+    }
+    document.write("<br>");
+   
+    // to print 20 to 1 numbers
+    i = 20;
+    while(i>=1) {
+        document.writeln(i);
+        i--;
+    }
+
+   </script>
+ 
+</body> 
+
+</html>

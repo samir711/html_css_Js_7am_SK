@@ -1,0 +1,88 @@
+<!-- 15-April-2024 -->
+<!-- Arrays  -->
+<!-- 
+Arrays
+======
+> Array is collection of elements (values).
+
+> storing group of elements  with same reference name is called array
+
+> Array allows similary type of values (homogeneous) as well as different types of values, means one array can
+store group numbers, strings, booleans etc...
+
+> we can create arrays in local scope or outer scope.
+
+> arrays are belongs to reference / non-primitive data types
+
+> arrays are created dynamically, and arrays are created in head area
+
+> Arrays maintain data in sequence order.
+
+Adv:
+
+> arrays are simplyfying coding when work with gourp of values.
+> easy transporting data
+> also used for data maintenance in applications
+
+Array Creation:
+
+Approach 1: 
+Using array Literal []
+Syntax:
+   let /var / const  array = [];
+   let /var / const  array = [val1, val2, val3,....];
+
+Approach 2:
+Using new keyword anc constructor
+Syntax:
+     var / let/ const   array = new Array();
+     var / let / const  array = new Array(val1, val2,...);
+
+accessing array:
+   array[index]
+         index is a slno of memory block, it start 0.
+set value:
+   array[index] = value;
+  
+size of array:
+array.length    ==> predefined property, it returns size of array
+array.length = N    ===> it reset size of array
+
+
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrays1</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+</head>
+  
+<body>
+  <h3>Demo on array Literal</h3>
+  <script>
+  //array declaration
+   let a = [];
+   document.write(`size ${a.length}<br>`);
+   document.write(`array ${a} <br>`);
+   a[0] = 10;
+   a[1] = 22;
+   a[2] = 45;
+   document.write(`size ${a.length}<br>`);
+   document.write(`array ${a}<br>`);
+
+   //array initialization 
+   let b = [10, 22, 55, 80];
+   document.write(`size ${b.length}<br>`);
+   document.write(`array ${b}<br>`);
+
+
+  </script>
+ 
+ 
+</body> 
+
+</html>

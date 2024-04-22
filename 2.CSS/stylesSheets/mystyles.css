@@ -1,0 +1,18 @@
+/* 
+ Examples on defining external Styles
+
+*/
+
+h3{
+
+    color:blue;
+}
+
+p{
+    color:orange
+}
+
+ /* 
+   Note: Save this file with name "mystyle.css" in current folder 
+
+  */
