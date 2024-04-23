@@ -1,0 +1,98 @@
+<!-- 23-April-2024 -->
+<!-- Object oriented programming in java script -->
+
+<!-- 
+  2. prototype-based(object based) Object - Oriented Programming
+  ex: javascript, typescript, perl, php, ...
+
+  Object represents a physical component.
+  Object is a real-time entity.
+     - We can see
+     - We can touch
+     - We can use
+
+Object is an instance of a class, nothing but memory block (one copy of class)
+"Object" is a predefined class; every class / object should be derived from "Object" class prototype.
+
+Object is a collection of members:
+ 1. properties (variables or fields)
+ 2. methods (functions)
+
+ Properties: Details about the object. Properties are the variables which are stored inside the Object. Properties
+ are used to store data about specific person, product or thing
+   Ex: array.length = 5;
+
+  Methods: to perform manipulations on the properties. Methods are functions stored inside the object. Methods
+  read values from properties, write values into properties, to perform logical operations.
+     Ex: array.sort() array.push() array.indexOf()
+
+  Note: Objects are used to data maintenance
+
+  Array         Object
+  Sequence      random
+  Index base    properties (Key)
+  []            { }
+
+Creating Objects:
+We can objects in 2 ways:-
+1. With Object literals
+2. By using new and Constructor functions
+
+Using object literals
+
+const refname = {
+
+    "property": value, property:value....,
+    "method-name" : function() {body},
+    method-name(){body}
+}
+Note:
+Methods we can write in any of 3 forms, i.e like normal function or expression or arrow
+
+How to access ?
+refname.property
+refname.property = value()
+refname.method-name()
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>object1</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+  
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on Object Literal </h3>
+
+  <script>
+         const ob = {  };
+  
+         const stud = {
+                      //properties  init
+                       slno : 1,
+                       name: "ram",
+                       course: "html"
+
+         }
+
+  document.write(`${ob} <br>`);
+  document.write(`${stud} <br>`);
+  document.write(`Sl no  : ${stud.slno} <br>`);
+  document.write(`Name   : ${stud.name} <br>`);
+  document.write(`Course : ${stud.course} <br>`);
+ 
+
+
+  </script>
+   
+ 
+</body> 
+
+</html>
