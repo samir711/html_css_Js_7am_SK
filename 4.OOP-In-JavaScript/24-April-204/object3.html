@@ -1,0 +1,54 @@
+<!-- 24-April-2024 -->
+<!-- Object oriented programming in java script -->
+
+<!-- 
+  
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>object2</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+  
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on Object Literal </h3>
+
+  <script>
+         const stud = { // properties
+                      "r.no": 11, name: 'ram', total:350, 
+                      getResult: function(){
+                        if (this.total > 400){ //stud.total
+                          return "pass";
+                        }
+                        else 
+                            return "fail";
+                      }
+
+         }  
+         
+ 
+        
+
+  document.write(`Roll No ${stud.rno} <br>`);
+  document.write(`Name ${stud.name} <br>`);
+  document.write(`Total ${stud.total} <br>`);
+  document.write(`Result ${stud.getResult()} <br>`);
+  stud.total = 450; //update
+  document.write(`Total ${stud.total} <br>`);
+  document.write(`Result ${stud.getResult()} <br>`);
+  
+
+  </script>
+   
+ 
+</body> 
+
+</html>
