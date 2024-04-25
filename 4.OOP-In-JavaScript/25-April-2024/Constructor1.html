@@ -1,0 +1,67 @@
+<!-- 25-April-2024 -->
+<!-- Object oriented programming in java script -->
+<!-- Construction Function -->
+<!-- 
+  Constructor is a function that receives an empty (created by new keyword) object, initializes properties
+  and methods to the object (object init).
+
+  Constructor functions technically are regular functions. There are three conventions though:
+  1. They are named with captial letter first.
+  2. They should be executed only with "new" keyword while object creation.
+  3. Constructor functions don't returns any value, hence no return statement.
+   
+  Syntax: 
+           function Constname(params) {
+            this.prop = value;
+            this.prop = value;
+            ...
+            ...
+            methods...
+           }
+
+           Constructor     object literal
+           no this        this
+           :              =
+           ,              ;
+
+          Object Syntax:
+          const refname = new Constname();     <= constuctor calling
+          const refname = new Const-name(args);
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Constructor1</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+       function Sample(){
+          document.write(`Sample constructor invoked <br> `);
+       }
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on Constructor functions </h3>
+
+  <script>
+    
+ //    Sample();   //invalid 
+ //    const ob = Sample(); //invalid
+//  document.write(`${ob} <br>`);
+
+   const ob2 = new Sample();
+   document.write(`${ob2} <br>`);
+
+   document.write(`${new Sample()} <br>`); //anonymous object
+ 
+
+  </script>
+   
+ 
+</body> 
+
+</html>
