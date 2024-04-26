@@ -1,0 +1,83 @@
+<!-- 26-April-2024 -->
+<!-- Object oriented programming in java script -->
+<!-- Functional inheritance -->
+<!-- 
+
+Functional Inheritance
+=> The process of creating a new object based on another object (exists) is called "Functional inheritance"
+
+OR
+
+=> The process of creating a new constructor based on another constructor (exists) is called "Functional Inh
+ertiance"
+
+=> Used to build the relationship between multiple constructors
+
+=> Used to extending functionalities of existing constructor without modifying source code.
+
+Constructor to build inheritance.
+
+Syntax:
+
+function Constructor(params) { // Parent
+
+  Prop init
+  Methods
+}
+
+function Constructor(params) { // Child
+
+  Constructor.call()         or constructor.call(this, params)
+  Prop init
+  Methods
+}
+
+refvar = new Constructor();
+=> By calling 1st constructor from 2nd constructor function using call()
+
+call() is a predefine function, it's used to call parent constructor from child constructor to build 
+inheritance.
+
+Javascript supports 3 types of inheritnace, those are
+1. Single Level
+2. Multi level
+3. Hierarchal 
+
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inher1</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+      function Parent(){
+
+        document.write(`Parent Constructor invoked <br>`);
+      }
+      function Child() {
+
+        Parent.call(); //inheritance
+        document.write(`Child constructor invoked <br>`)
+
+      }
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on single level inheritance </h3>
+
+  <script>
+  //   new Parent(); // only parent
+     new Child();   // Child constructor
+
+     const ob = new Child();
+  </script>
+   
+ 
+</body> 
+
+</html>
