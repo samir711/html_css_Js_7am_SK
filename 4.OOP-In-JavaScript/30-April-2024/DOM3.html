@@ -1,0 +1,42 @@
+<!-- 30-April-2024 -->
+<!-- Example on JS DOM (Document Object Model) -->
+<!-- API => Lib = > Collection of perdefined programs (Classes) -->
+<!-- 
+   
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM3</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+    #id1 { color: red; }
+    .c { color: blue; }
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on document object methods </h3>
+   <h2 id="id1"> Hello world</h2>
+   <span class="c">Red apple</span>
+   <p class="c">Yellow Mango</p>
+   <div class="c">Black Grape</div>
+   <hr>
+   <script>
+     const ob1 = document.querySelector("#id1");
+     document.write(`${ob1} <br>`);
+
+     const ob2 = document.querySelectorAll(".c");
+     document.write(`${ob2} <br>`);
+   </script>
+
+ 
+   
+ 
+</body> 
+
+</html>

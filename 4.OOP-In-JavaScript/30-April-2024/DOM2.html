@@ -1,0 +1,46 @@
+<!-- 30-April-2024 -->
+<!-- Example on JS DOM (Document Object Model) -->
+<!-- API => Lib = > Collection of perdefined programs (Classes) -->
+<!-- 
+   
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM2</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+     
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on document object methods </h3>
+   <h1 id="head1">Hello World</h1>
+   <input type="radio" name="color"><label>Red</label><br>
+   <input type="radio" name="color"><label>Green</label><br>
+   <input type="radio" name="color"><label>Blue</label><br>
+
+  <hr>
+
+  <script>
+    const hob = document.getElementById("head1");
+    document.write(`${hob}<br>`);
+    
+    const iob = document.getElementsByName("color");
+    document.write(`${iob}<br>`);
+    
+    const lob = document.getElementsByTagName("label");
+    document.write(`${lob} <br>`)
+    document.write(`${lob[1].nodeValue} <br>`)
+
+  </script>
+   
+ 
+</body> 
+
+</html>

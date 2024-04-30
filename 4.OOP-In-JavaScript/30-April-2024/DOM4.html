@@ -1,0 +1,48 @@
+<!-- 30-April-2024 -->
+<!-- Example on JS DOM (Document Object Model) -->
+<!-- API => Lib = > Collection of perdefined programs (Classes) -->
+<!-- 
+   
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM4</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+    #id1 { color: red; }
+    .c { color: blue; }
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on element object properties </h3>
+  <h1 id="heading1">Hello</h1>
+  <input type="text" id="tb" value="1000">
+  <br>
+  <hr>
+   <script>
+         // innerText  innerHTML => Output Tag
+         // value for input tag
+
+    const h1 = document.getElementById("heading1");
+    document.write(`${ h1.innerText} <br>`) 
+    // h1.innerText=" ";
+ //     h1.innerText="Shiva";
+      h1.innerText += "siva";
+      const tb = document.getElementById("tb");
+      document.write(`${tb.value} <br>`);
+      tb.value="1212";
+      
+   </script>
+    
+ 
+   
+ 
+</body> 
+
+</html>

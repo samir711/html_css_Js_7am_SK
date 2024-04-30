@@ -1,0 +1,75 @@
+<!-- 29-April-2024 -->
+<!-- Example on JS DOM (Document Object Model) -->
+<!-- API => Lib = > Collection of perdefined programs (Classes) -->
+<!-- 
+             Html <==> DOM <==> js
+
+What scripting interfaces are available?
+The most basic scriptin interface developed at W3C is the DOM, the Document Object Model which allows programs
+and scripts to Dynamically access and updates the content, structure and style of documents. Dom s
+
+Number of html tags = Number of Doms + extra tag
+
+TagName         DOM class
+head             =>  HTMLHEADElement       => object
+body             =>  HTMLBodyElement      => object
+p                =>  HTMLParagraphElement
+
+Document Object
+---------------
+> This object providing interaction with current webpage / webdocument
+> This "document" hs some properties and methods
+1. Title
+
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM1</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+     
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on document object properties </h3>
+  <img src="images/gifer.jpg" width="100">
+  <img src="images/snow.jpg" width="100">
+  <hr>
+
+  <script>
+      const h = document.head;
+      document.write(`${h} <br>`);
+      const b = document.body;
+      document.write(`${b} <br>`);
+      
+      const i = document.images;
+      document.write(`${i} <br>`);
+
+      const f = document.forms;
+      document.write(`${f} <br>`);
+
+      const l = document.links;
+      document.write(`${l} <br>`);
+      document.write(`${document.title} <br>`);
+      document.title = "AAAA";
+
+      document.write(document.URL);
+      window.location.href="https://www.google.com"
+      
+      document.URL;
+      document.write
+
+
+
+  </script>
+   
+ 
+</body> 
+
+</html>

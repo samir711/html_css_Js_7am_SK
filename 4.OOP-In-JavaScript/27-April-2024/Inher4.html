@@ -1,0 +1,64 @@
+<!-- 27-April-2024 -->
+<!-- Object oriented programming in java script -->
+<!-- Functional inheritance -->
+<!-- 
+
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inher4</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+     function Parent(x){
+       this.x = x;
+       this.getX = function() {
+        return this.x;
+       }
+
+     }
+      
+      function Child(x, y) {
+        
+         Parent.call(this, x);
+
+         this.y = y;
+
+         this.getY = function() {
+          return this.y;
+         }
+
+         this.add = function() {
+          return this.x + this.y;
+         }
+
+         this.sub = function() {
+          return this.x - this.y;
+         }
+        
+      }
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on Inheritance </h3>
+
+  <script>
+     
+     const ob =  new Child(10 , 20);
+     document.write(`${ob.add()} <br>`);
+     document.write(`${ob.sub()} <br>`);
+  
+     const ob2 = new Child(25, 9);
+     document.write(`${ob2.add()} <br>`);
+     document.write(`${ob2.sub()} <br>`);
+  </script>
+   
+ 
+</body> 
+
+</html>

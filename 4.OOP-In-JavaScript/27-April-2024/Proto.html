@@ -1,0 +1,54 @@
+<!-- 27-April-2024 -->
+<!-- Object oriented programming in java script -->
+<!-- Prototype -->
+<!-- 
+  Sometime you want to add new properties or methods to an object constructor.
+
+  Syntax:
+    Constructor.prototype.new-property = value;
+    Constructor.prototype.new-method = function() {code};
+
+  Literal Syntax:
+
+  Object.prototype.new-property = value;
+  Object.prototype.new-method = function() {code};
+
+  refname.new-prop = value
+  refname.new-method = body
+
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>proto</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+    <script >
+     
+    </script>
+</head>
+  
+<body>
+  <h3>Demo on prototype </h3>
+
+  <script>
+     
+      const ob1 = {x:10};
+      ob1.y = 20;      //prototype
+      ob1.add = function() {
+        return this.x + this.y;
+      }
+
+      document.write(`${ob1.x} <br> ${ob1.y} <br> ${ob1.add()} <br>`);
+      Object.prototype.z = 100
+      document.write(`${ob1.z}`);
+
+  </script>
+   
+ 
+</body> 
+
+</html>
