@@ -1,0 +1,49 @@
+<!-- 01-May-2024 -->
+<!-- Example on JS DOM (Document Object Model) -->
+<!-- API => Lib = > Collection of perdefined programs (Classes) -->
+<!-- 
+   
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM9</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+ 
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on dom events </h3>
+  <h1 id="head1"> This program is free software</h1>
+  <input type="radio" id="c1" name="c"><label>Red</label> &nbsp;
+  <input type="radio" id="c2" name="c"><label>Green</label> &nbsp;
+  <input type="radio" id="c3" name="c"><label>Blue</label> &nbsp;
+  
+   <script>
+      const h1 = document.querySelector("#head1").style;
+
+     document.querySelector("#c1").onchange= () => h1.color="red";
+     document.querySelector("#c2").onchange= () => h1.color="green";
+     document.querySelector("#c3").onchange= () => h1.color="blue";
+  
+   </script>
+     <hr>
+    <br>
+    <input type="color" id="color">
+     <script>
+      document.querySelector("#color").onchange=()=>{
+        document.body.style.background = color.value;
+      }
+     </script>
+   
+   
+ 
+</body> 
+
+</html>

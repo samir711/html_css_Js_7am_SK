@@ -1,0 +1,66 @@
+<!-- 02-May-2024 -->
+<!-- Example on Timer -->
+<!--   -->
+<!-- 
+   setTimeout()
+     callback, timer, it execute task, only once after n milli seconds
+     var = window.setTiemout(task, "interval")
+
+   setInterval()
+     callback, timer, it exe tasks repeatedly for every n mi seconds
+      var = window.setInterval(task, "interval")
+  
+  clearTimeout() -> it stops/ clears the time out function
+                    window.clear.Timeout(t-index)
+  clearInterval() -> it stops/clears the interval
+                    window.clearInterval(t-index)
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>timer2</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+ 
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on timer functions </h3>
+    
+   <h1 id="time" align="right">Clock</h1>
+    <script>
+     setInterval(function(){
+      let dt= new Date();
+     // document.querySelector("#time").innerText=dt.toLocaleTimeString();
+      document.querySelector("#time").innerText=dt.toLocaleTimeString();
+      
+     },"1000");
+      
+    </script>
+    <div style ="width: 100%;height:150px; background:black"></div>
+    <button id="start">Start colors</button>
+    <button id="stop">Stop colors</button>
+    <script>
+      let ti;
+       
+      document.querySelector("#start").onclick=function(){
+        ti= setInterval(()=>{
+          let c = `#${parseInt( Math.random() * 1000000)}`;
+          document.querySelector("div").style.background = c;
+         
+        },"1000");
+        
+      }
+      document.querySelector("#stop").onclick=()=>clearInterval(ti);
+    </script>
+   
+   
+ 
+</body> 
+
+</html>

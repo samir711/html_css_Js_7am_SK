@@ -1,0 +1,55 @@
+<!-- 02-May-2024 -->
+<!-- Example on Timer -->
+<!--   -->
+<!-- 
+   setTimeout()
+     callback, timer, it execute task, only once after n milli seconds
+     var = window.setTiemout(task, "interval")
+
+   setInterval()
+     callback, timer, it exe tasks repeatedly for every n mi seconds
+      var = window.setInterval(task, "interval")
+  
+  clearTimeout() -> it stops/ clears the time out function
+                    window.clear.Timeout(t-index)
+  clearInterval() -> it stops/clears the interval
+                    window.clearInterval(t-index)
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>timer3</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+ 
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on timer functions </h3>
+    
+   <h1 id="time" align="center">Image Changing</h1>
+   <div style="width:70%;height:300px;margin:auto;">
+    <img src="images/gifer.jpg" style="width:100%;height:100%;">
+  </div>
+   <script>
+          const imgs = ['gifer.jpg','photo.png','snow.jpg'];
+          let index = 1;
+          setInterval(function(){
+            document.images[0].src = `images/${imgs[index]}`;
+            index++;
+            if(index === imgs.length)
+              index=0;
+          },"2000");
+    </script>
+   
+   
+   
+ 
+</body> 
+
+</html>

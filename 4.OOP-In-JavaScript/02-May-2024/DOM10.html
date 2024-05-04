@@ -1,0 +1,80 @@
+<!-- 02-May-2024 -->
+<!-- Example on JS DOM (Document Object Model) -->
+<!-- API => Lib = > Collection of perdefined programs (Classes) -->
+<!-- 
+   
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM10</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+ 
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on adding and removing elements </h3>
+   <div id="div1">
+    <h1>Red Apple</h1>
+    <span>Yellow mango</span>
+    <p>Black Grape</p>
+    <button onclick="document.querySelector('span').remove()">delete ele</button>
+
+   </div>
+   <hr>
+   <div id="div2">
+    <button id="bt2"> Adding to cart </button>
+   </div>
+ 
+    <script>
+      document.querySelector("#bt2").onclick=function(){
+       const pi = document.createElement("img");    //<img>
+       pi.src="images/gifer.jpg";
+       pi.style.width = "100%";
+       pi.style.height = "100px";
+ 
+       document.body.appendChild(pi);
+
+       const pn = document.createElement("h3"); //<h3> </h3>
+       pn.innerText="Skechers";
+       pn.style.textAlign = "center";
+
+       const pp = document.createElement("div");
+       pp.innerHTML ="offer price <strong>&#8377;3000</strong> <br> M.R.P <del> 7#877;4000</del>";
+
+       const delbt = document.createElement("button");
+       delbt.innerText = "delete item";
+       delbt.onclick=function(){document.querySelector("#product").remove();}
+
+       const product = document.createElement("div");
+       product.id = "product";
+       product.style.width = "200px";
+       product.style.borderRadius = "15px";
+       product.style.boxShadow="0 0  10px gray";
+       product.style.padding ="10px";
+       product.style.display = "inline-block";
+       product.style.margin = "10px";
+
+       product.appendChild(pi);
+       product.appendChild(pn);
+       product.appendChild(pp);
+       product.appendChild(delbt);
+
+       document.body.appendChild(product);
+
+
+
+      };
+    </script>
+   
+   
+ 
+</body> 
+
+</html>

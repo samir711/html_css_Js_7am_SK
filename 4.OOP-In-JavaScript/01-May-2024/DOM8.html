@@ -1,0 +1,56 @@
+<!-- 01-May-2024 -->
+<!-- Example on JS DOM (Document Object Model) -->
+<!-- API => Lib = > Collection of perdefined programs (Classes) -->
+<!-- 
+   
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM8</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+ 
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on dom events </h3>
+    <button id="bt1">Push here</button>
+    <button id="bt2">Pull here</button>
+ 
+   <script>
+      
+      const bt1 = document.querySelector("#bt1");
+       // Ist Approach 
+
+      bt1.addEventListener("click", function(){
+
+        alert("Button pushed");
+      });
+
+      // or
+      document.querySelector("#bt1").addEventListener("click", function(){alert("button pushed"); });
+
+      // 2nd Approach
+      const bt2 = document.querySelector("#bt2");
+      bt2.onclick =  function() {
+          alert("button pulled");
+      };
+
+      //or
+      document.querySelector("#bt2").onclick = function() {
+        alert("button pulled");
+      };
+   </script>
+    
+ 
+   
+ 
+</body> 
+
+</html>

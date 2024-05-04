@@ -1,0 +1,60 @@
+<!-- 03-May-2024 -->
+<!-- Error Handling in JavaScript -->
+<!--   -->
+<!-- 
+ Error handling in JavaScript:
+ to work with error/exceptions use try, catch, finally, throw keywords.
+ try, catch and finallyy are blocks
+ throw statement.
+
+ Try catch statement: This statement allows you to test a block of code for errors. The Try block contains
+ the code to be run & the 
+
+
+ Syntax:
+ try {
+
+    code to run [break;]
+ }
+  catch(ob) {
+
+  code to run if an exception occurs [break;]
+  } finally {
+    Statements
+  }
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ErrorHandling2</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+ 
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on Error handling </h3>
+     
+   <script>
+    let age=prompt("Enter your age");
+    try{
+      if(age < 18){
+        throw "invalid age for voting";
+      }
+        document.write("Welcome to vote<br>");
+        document.write("Continue your voiting operation <br>");
+   
+    } catch(ob){
+      document.write(ob);
+    }
+
+
+  </script>
+ </body> 
+
+</html>
