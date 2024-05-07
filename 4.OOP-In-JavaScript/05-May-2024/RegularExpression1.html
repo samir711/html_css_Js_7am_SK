@@ -1,4 +1,4 @@
-<!-- 03-May-2024 -->
+<!-- 05-May-2024 -->
 <!-- Validations in JavaScript -->
 <!--   -->
 <!-- 
@@ -40,7 +40,7 @@ validations
 <html lang="en">
 
 <head>
-    <title>ErrorHandling2</title>
+    <title>RegularExpression1></title>
     <meta charset="UTF-8">
     <link rel="icon" href="logo1.png">
   <style>
@@ -49,12 +49,17 @@ validations
 </head>
   
 <body>
-  <h3>Demo on Validation Regular expression </h3>
-     
-   <script>
-   
+  <h3>Demo on  Regular expression </h3>
+  <input type="text" id="una">
+ <button onclick="check()">check data</button>
+  <script>
+   function check(){
 
-  </script>
- </body> 
+    const expr = new RegExp(/siva/);
+      alert(expr.test(una.value));
+   }
+
+ </script>
+ </body>
 
 </html>

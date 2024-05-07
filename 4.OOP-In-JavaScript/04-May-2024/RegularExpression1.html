@@ -1,0 +1,65 @@
+<!-- 03-May-2024 -->
+<!-- Validations in JavaScript -->
+<!--   -->
+<!-- 
+ => Clinet side validations, form validations, is validations
+Regulare expressions or regex are patterns used to match character combinations in strings.
+
+You can create a regex pattern using the 'RegExp' constructor or by using regex literals enclosed in slash
+
+Syntax:
+        const refvar = new RegExp (pattern);
+        const refvar = /pattern/;
+
+        refvar.text(data) => true, false
+
+validations
+      cross checking users given 
+                   => own coding
+                   => reg exp
+
+  word   => ram
+   /i
+   /g
+   /w
+    [ ]
+    -
+    \d
+    *
+    {count}
+    {min, max}
+    (?=.____)
+
+    Syntax:   /^_______$/
+              
+
+-->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RegularExpression1></title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo1.png">
+  <style>
+ 
+  </style>
+</head>
+  
+<body>
+  <h3>Demo on  Regular expression </h3>
+  <input type="text" id="una">
+ <button onclick="check()">check data</button>
+  <script>
+   function check(){
+
+    const expr = new RegExp(/siva/);
+      alert(expr.test(una.value));
+   }
+
+ </script>
+ </body>
+
+</html>
